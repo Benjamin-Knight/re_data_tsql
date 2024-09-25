@@ -1,0 +1,16 @@
+re_data_tsql:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      host: WVT-BI-DEV3
+      port: 1433
+      database: DBT
+      schema: BI
+      windows_login: False
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      encrypt: False
+      trust_cert: False
+      threads: 12

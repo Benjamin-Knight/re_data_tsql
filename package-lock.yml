@@ -1,0 +1,6 @@
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.1.1
+  - package: dbt-msft/tsql_utils
+    version: 1.2.0
+sha1_hash: fa6e90848d8d53118016630883854c314f500e24
